@@ -31,11 +31,11 @@ const Sidebar = () => {
         <NavLinks />
       </div>
 
-      <div className="absolute md:hidden block top-6 right-6">
+      <div className="absolute md:hidden block top-6 right-6 z-10">
         {mobileMenuOpen ? (
-          <RiCloseLine className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(false)} />
+          <RiCloseLine className="w-6 h-6 text-white mr-2 cursor-pointer z-20" onClick={() => setMobileMenuOpen(false)} />
         ) : (
-          <HiOutlineMenu className="w-6 h-6 text-white mr-2" onClick={() => setMobileMenuOpen(true)} />
+          <HiOutlineMenu className="w-6 h-6 text-white mr-2 cursor-pointer z-20" onClick={() => setMobileMenuOpen(true)} />
         )}
       </div>
 
